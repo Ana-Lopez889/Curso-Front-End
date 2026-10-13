@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "roboto mono", monospace;
+  font-size: 1.6rem;
+  background-color: #e8f3f1;
+  color: #333333;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+.bg-primary {
+  background-color: #333333;
+}
+.bg-secondary {
+  color: #333333;
+}
+.text-dark {
+  color: black;
+}
+.text-light {
+  color: #333333;
+}
+.text-secondary {
+  color: #333333;
+}
+img {
+  width: 20rem;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0 1.5rem 0;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0.7rem 0;
+}
+.btn {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}
+
+header,
+footer {
+  background: #5fafa5;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer {
+  padding: 1rem 4rem;
+}
+.div-MediSalud-Insumos-Medicos {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+.MediSalud-Insumos-Medicos img {
+  width: 200px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 2px solid #78b8a0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.header-nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.header-nav {
+  margin-right: 2rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.header-nav i,
+.footer-list i {
+  font-size: 2.6rem;
+}
+.header-nav a,
+.footer-list a {
+  text-decoration: none;
+  color: white;
+}
+.header-nav a:hover,
+.footer-list a:hover {
+  color: #8bcbc2;
+}
+.Inicio h1 {
+  width: 100%;
+}
+.parrafo {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.card {
+  background-color: white;
+  width: 30rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+.card img {
+  width: 18rem;
+  height: 12rem;
+  object-fit: contain;
+}
+.card p {
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0.1rem 0;
+}
+.pagina-proximamente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2rem;
+}
+.pagina-proximamente h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.pagina-proximamente p {
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+.pagina-proximamente p:last-child {
+  margin-top: 2.5rem;
+}
+@media (max-width: 768px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
+  .header-nav,
+  .div-MediSalud-Insumos-Medicos {
+    margin: 0;
+  }
+}
